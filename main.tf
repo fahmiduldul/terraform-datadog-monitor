@@ -15,7 +15,7 @@ Notification recipients:${local.recipients_message}${local.alert_message}${local
 EOF
 
 
-  tags = ["product_domain:${var.product_domain}", "service:${var.service}", "environment:${var.environment}"]
+  tags = ["productdomain:${var.product_domain}", "service:${var.service}", "environment:${var.environment}"]
 }
 
 resource "datadog_monitor" "template" {
